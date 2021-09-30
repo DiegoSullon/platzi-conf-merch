@@ -4,23 +4,31 @@ import initialState from '../../initialState';
 const useInitialState = () => {
   const [state, setstate] = useState(initialState);
 
-  const addToCart = paylad => {
+  const addToCart = payload => {
     setstate({
       ...state,
-      cart: [...state.cart, paylad],
+      cart: [...state.cart, payload],
     });
   };
 
-  const removeFromCart = paylad => {
+  const removeFromCart = payload => {
     setstate({
       ...state,
-      cart: state.cart.filter(item => item.id !== paylad.id),
+      cart: state.cart.filter(item => item.id !== payload.id),
+    });
+  };
+
+  const addToBuyer = payload => {
+    setstate({
+      ...state,
+      buyer: [...state.buyer, payload],
     });
   };
 
   return {
     addToCart,
     removeFromCart,
+    addToBuyer,
     state,
   };
 };
