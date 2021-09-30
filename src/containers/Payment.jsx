@@ -8,8 +8,7 @@ const Payment = ({ history }) => {
   const { cart, buyer } = state;
 
   const paypalOptions = {
-    clientId:
-      '',
+    clientId: process.env.CLIENT_ID_PP,
     intent: 'capture',
     currency: 'USD',
   };
