@@ -26,6 +26,7 @@
   "homepage": "https://github.com/DiegoSullon/platzi-conf-merch#readme",
   "dependencies": {
     "@react-google-maps/api": "^2.4.1",
+    "axios": "^0.21.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-paypal-button": "^4.1.1",
