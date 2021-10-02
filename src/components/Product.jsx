@@ -3,7 +3,7 @@ import React from 'react';
 const Product = ({ product, handleAddToCart }) => (
   <div className='Products-item'>
     <img
-      src={`http://localhost:1337${product.image[0].url}`}
+      src={product.image}
       alt={product.title}
     />
     <div className='Product-item-info'>

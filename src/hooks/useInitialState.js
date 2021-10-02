@@ -2,7 +2,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import initialState from '../../initialState';
 
-const API = 'http://localhost:1337/products';
+// const API = 'http://localhost:1337/products';
+const API = 'https://us-central1-gndx-fake-api.cloudfunctions.net/api';
 
 const useInitialState = () => {
   const [state, setstate] = useState(initialState);
